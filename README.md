@@ -2,26 +2,17 @@
 
 > Help with SQL commands to interact with a MySQL database
 
-## MySQL Locations
-* Mac             */usr/local/mysql/bin*
-* Windows         */Program Files/MySQL/MySQL _version_/bin*
-* Xampp           */xampp/mysql/bin*
-
-## Add mysql to your PATH
-
-```bash
-# Current Session
-export PATH=${PATH}:/usr/local/mysql/bin
-# Permanantly
-echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile
+## Installation on Linux
 ```
-
-On Windows - https://www.qualitestgroup.com/resources/knowledge-center/how-to-guide/add-mysql-path-windows/
+sudo apt install mysql-server
+sudo systemctl restart mysql.service
+sudo systenctl status mysql.service
+```
 
 ## Login
 
 ```bash
-mysql -u root -p
+sudo mysql
 ```
 
 ## Show Users
