@@ -46,6 +46,21 @@ SHOW GRANTS FOR 'someuser'@'localhost';
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'someuser'@'localhost';
 ```
 
+## SHOW ALL MYSQL USERS
+
+```
+SELECT 
+    db.User AS 'Database User',
+    db.Host AS 'Host',
+    db.Db AS 'Database',
+    user.User AS 'MySQL User'
+FROM 
+    mysql.db db
+JOIN 
+    mysql.user user ON db.User = user.User AND db.Host = user.Host;
+
+```
+
 ## Delete User
 
 ```sql
