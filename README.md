@@ -61,6 +61,13 @@ JOIN
 
 ```
 
+## UPDATE USER PASSWORD
+
+```
+ALTER USER 'username'@'hostname' IDENTIFIED BY 'new_password';
+
+```
+
 ## Delete User
 
 ```sql
