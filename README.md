@@ -48,7 +48,7 @@ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'someuser'@'localhost';
 
 ## SHOW ALL MYSQL USERS
 
-```
+```sql
 SELECT 
     db.User AS 'Database User',
     db.Host AS 'Host',
@@ -63,7 +63,7 @@ JOIN
 
 ## UPDATE USER PASSWORD
 
-```
+```sql
 ALTER USER 'username'@'hostname' IDENTIFIED BY 'new_password';
 
 ```
